@@ -16,7 +16,14 @@ def find_highest_calories():
 
 
     sum_calories = [sum(elf) for elf in calories]
-    return max(sum_calories)
+    # return max(sum_calories) -- solution for part 1
+
+    # part 2
+    sort_sum_calories = sorted(sum_calories)
+    three_highest = sort_sum_calories[-1] + sort_sum_calories[-2] + sort_sum_calories[-3]
+    return three_highest
+
+print(find_highest_calories())
 
 
 
