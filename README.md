@@ -1,1 +1,3 @@
-# Advent_of_code
+# Advent of Code
+
+Solved with Python
