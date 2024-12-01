@@ -27,3 +27,16 @@ for num in first_list:
 total_distance = sum(total_differences)
 
 print(total_distance)
+
+
+
+
+
+
+
+
+
+
+
+
+
