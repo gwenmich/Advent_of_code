@@ -10,7 +10,7 @@ with open("puzzle_2_input.txt", "r") as file:
 
 
 def safe_reports(input):
-    # find if numbers are ascending or descending
+
     safe_reps = []
     for report in input:
         if report == sorted(report, reverse = True):
@@ -23,7 +23,8 @@ def safe_reports(input):
 
         else:
             safe_reps.append(False)
-    print(safe_reps)
+
+    # print(safe_reps)
     return safe_reps.count(True)
 
 print(safe_reports(reports))
