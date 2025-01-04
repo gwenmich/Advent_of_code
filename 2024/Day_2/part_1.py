@@ -3,7 +3,7 @@ reports = []
 
 with open("puzzle_2_input.txt", "r") as file:
     for line in file:
-        levels = line.split()
+        levels = [*map(int, line.split())]
         reports.append(levels)
 
     file.close()
@@ -24,7 +24,6 @@ def safe_reports(input):
         else:
             safe_reps.append(False)
 
-    # print(safe_reps)
     return safe_reps.count(True)
 
 print(safe_reports(reports))
